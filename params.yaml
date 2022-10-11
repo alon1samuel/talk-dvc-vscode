@@ -1,0 +1,19 @@
+vars:
+  config: "config.cfg"
+  name: "textcat_docs"
+  version: "0.0.0"
+  train: "docs_issues_training"
+  dev: "docs_issues_eval"
+  gpu_id: -1
+
+model-1:
+  config: "config_1.cfg"
+  model: "model_1"
+
+model-2:
+  config: "config_2.cfg"
+  model: "model_2"
+
+model-3:
+  config: "config_3.cfg"
+  model: "model_3"

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "dvc-vscode"
+version = "0.1.0"
+description = ""
+authors = ["Alon Samuel"]
+readme = "README.md"
+packages = [{include = "dvc_vscode"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+spacy = "^3.4.1"
+dvc = "^2.30.0"
+ipykernel = "^6.16.0"
+pandas = "^1.5.0"
+black = "^22.10.0"
+mypy = "^0.982"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
