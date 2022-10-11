@@ -49,8 +49,8 @@ stages:
     - rm -rf training/model_2/model-last
     deps:
     - path: configs/config_2.cfg
-      md5: 98f448a23895c1b58c60c8e00872345c
-      size: 2933
+      md5: 95789dca5dd651e83a470b13c58c3016
+      size: 2931
     - path: corpus/docs_issues_eval.spacy
       md5: aa66fd3cd54021ce18c231cc27c7fa64
       size: 376708
@@ -59,8 +59,8 @@ stages:
       size: 202580
     outs:
     - path: training/model_2/model-best
-      md5: b820886ff65590106b948b882ade488e.dir
-      size: 5247282
+      md5: b252b9bf6861aa9c543dc031b36309bf.dir
+      size: 5247279
       nfiles: 12
   train-model-1:
     cmd:
@@ -98,13 +98,13 @@ stages:
       size: 5247279
       nfiles: 12
     - path: training/model_2/model-best
-      md5: b820886ff65590106b948b882ade488e.dir
-      size: 5247282
+      md5: b252b9bf6861aa9c543dc031b36309bf.dir
+      size: 5247279
       nfiles: 12
     outs:
     - path: training/model_1/metrics.json
-      md5: 562390e1a704e8fef3daf5ff1348fe6f
+      md5: 3916c814ffc367583f25d209c3aa80a6
       size: 569
     - path: training/model_2/metrics.json
-      md5: 036ec5b891542cb12e869cc2dd050f4e
+      md5: b8ef9aa7e8fc2ebfa586140c7948ac0f
       size: 569
