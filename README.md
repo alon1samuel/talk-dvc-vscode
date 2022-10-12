@@ -16,12 +16,30 @@ To generate the graph visualization above, run:
 ## Prerequists
 1. [Poetry](https://python-poetry.org/).
 2. [Graphviz](https://graphviz.org/).
-3. []().
+3. [VSCode](https://code.visualstudio.com/).
 
 ## To start
 
-1. `git clone https://github.com/polecat-dev/dvc_vscode.git`
-2. `cd dvc_vscode`
-3. `poetry install` (installing dependencies)
-4. `poetry shell`
-4. ``
+`git clone https://github.com/polecat-dev/dvc_vscode.git`
+
+`cd dvc_vscode`
+
+`poetry install` (installing dependencies)
+
+`poetry shell`
+
+`python scripts/init_files.py`
+
+
+To reproduce the pipeline - 
+
+`dvc repro`
+
+To visualise results - 
+
+Go to [results](notebooks/results.ipynb).
+
+Define your kernel (with the poetry virtualenv).
+
+Run all cells.
+
