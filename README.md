@@ -28,11 +28,11 @@ Lecture link - TBC
 
 ## To start
 
-To reproduce the pipeline - 
+### To reproduce the pipeline - 
 
 `dvc repro`
 
-To visualise results - 
+### To visualise results - 
 
 Go to [results](notebooks/results.ipynb).
 
