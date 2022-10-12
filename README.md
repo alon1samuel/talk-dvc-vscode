@@ -9,7 +9,7 @@ VSCode notebook extension - check changes.
 
 Lecture link - TBC
 
-## Prerequists
+## Prerequisites
 1. [Poetry](https://python-poetry.org/).
 2. [Graphviz](https://graphviz.org/).
 3. [VSCode](https://code.visualstudio.com/).
