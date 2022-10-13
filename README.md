@@ -4,10 +4,10 @@ How to use DVC pipelines and vscode notebook extensions to run Data Science expe
 ## Introduction
 This is a repo that was done for a lecture for PyData Bristol on 11.10.2022. 
 
-This repo has the materials for a simple DVC pipeline and how to monitor results using
-VSCode notebook extension - check changes.
+This repo has the materials for a simple DVC pipeline and how to monitor results using VSCode notebook extension - check changes.
 
-Lecture link - TBC
+[Lecture from PyData Bristol](slides/DataScience_pipeline_DVC_and_VScode.pdf)
+
 
 ## Prerequisites
 1. [Poetry](https://python-poetry.org/).
