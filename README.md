@@ -10,9 +10,10 @@ This repo has the materials for a simple DVC pipeline and how to monitor results
 
 
 ## Prerequisites
-1. [Poetry](https://python-poetry.org/).
-2. [Graphviz](https://graphviz.org/).
-3. [VSCode](https://code.visualstudio.com/).
+1. [Python 3.11](https://www.python.org/).
+2. [Poetry](https://python-poetry.org/).
+3. [Graphviz](https://graphviz.org/).
+4. [VSCode](https://code.visualstudio.com/).
 
 ## Installation (on linux)
 
@@ -20,9 +21,11 @@ This repo has the materials for a simple DVC pipeline and how to monitor results
 
 `cd dvc_vscode`
 
-`poetry install` (installing dependencies)
-
 `poetry shell`
+
+`pip install --upgrade pip`
+
+`poetry install` (installing dependencies)
 
 `python scripts/init_files.py`
 
