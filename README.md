@@ -17,7 +17,7 @@ This repo has the materials for a simple DVC pipeline and how to monitor results
 
 ## Installation (on linux)
 
-`git clone https://github.com/polecat-dev/dvc_vscode.git`
+`git clone https://github.com/polecat-dev/pydata-talk-dvc-vscode.git`
 
 `cd dvc_vscode`
 
