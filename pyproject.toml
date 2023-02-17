@@ -1,20 +1,22 @@
 [tool.poetry]
-name = "dvc-vscode"
+name = "pydata-talk-dvc-vscode"
 version = "0.1.0"
 description = ""
-authors = ["Alon Samuel <alon1samuel@gmail.com>"]
+authors = ["Alon Samuel"]
 readme = "README.md"
-packages = [{include = "dvc_vscode"}]
+packages = [{include = "pydata_talk_dvc_vscode"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
-spacy = "^3.4.1"
-dvc = "^2.30.0"
-ipykernel = "^6.16.0"
-pandas = "^1.5.0"
-black = "^22.10.0"
-mypy = "^0.982"
+python = "^3.11"
 
+
+[tool.poetry.group.dev.dependencies]
+spacy = "^3.5.0"
+dvc = "^2.45.1"
+ipykernel = "^6.21.2"
+pandas = "^1.5.3"
+black = "^23.1.0"
+mypy = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
