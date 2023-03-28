@@ -16,8 +16,10 @@ stages:
   preprocess:
     desc: "Convert the data to spaCy's binary format"
     cmd:
-      - "python scripts/preprocess.py assets/${vars.train}.jsonl corpus/${vars.train}.spacy"
-      - "python scripts/preprocess.py assets/${vars.dev}.jsonl corpus/${vars.dev}.spacy"
+      - "python scripts/preprocess.py assets/${vars.train}.jsonl 
+      corpus/${vars.train}.spacy"
+      - "python scripts/preprocess.py assets/${vars.dev}.jsonl 
+      corpus/${vars.dev}.spacy"
     deps:
       - "assets/${vars.train}.jsonl"
       - "assets/${vars.dev}.jsonl"
@@ -29,7 +31,11 @@ stages:
   train-model-1:
     desc: "Train a text classification model - short"
     cmd:
-      - "python -m spacy train configs/${model-1.config} --output training/${model-1.model} --paths.train corpus/${vars.train}.spacy --paths.dev corpus/${vars.dev}.spacy --gpu-id ${vars.gpu_id}"
+      - "python -m spacy train configs/${model-1.config} 
+      --output training/${model-1.model} 
+      --paths.train corpus/${vars.train}.spacy 
+      --paths.dev corpus/${vars.dev}.spacy 
+      --gpu-id ${vars.gpu_id}"
       - "rm -rf training/${model-1.model}/model-last"
     deps:
       - "corpus/${vars.train}.spacy"
@@ -41,8 +47,11 @@ stages:
   train-model-2:
     desc: "Train a text classification model - medium"
     cmd:
-      - "python -m spacy train configs/${model-2.config} --output training/${model-2.model} 
-        --paths.train corpus/${vars.train}.spacy --paths.dev corpus/${vars.dev}.spacy --gpu-id ${vars.gpu_id}"
+      - "python -m spacy train configs/${model-2.config} 
+      --output training/${model-2.model} 
+      --paths.train corpus/${vars.train}.spacy 
+      --paths.dev corpus/${vars.dev}.spacy 
+      --gpu-id ${vars.gpu_id}"
       - "rm -rf training/${model-2.model}/model-last"
     deps:
       - "corpus/${vars.train}.spacy"
@@ -54,10 +63,14 @@ stages:
   evaluate:
     desc: "Evaluate the model and export metrics"
     cmd:
-      - "python -m spacy evaluate training/${model-1.model}/model-best corpus/${vars.dev}.spacy 
-        --output training/${model-1.model}/metrics.json --gpu-id ${vars.gpu_id}"
-      - "python -m spacy evaluate training/${model-2.model}/model-best corpus/${vars.dev}.spacy 
-        --output training/${model-2.model}/metrics.json --gpu-id ${vars.gpu_id}"
+      - "python -m spacy evaluate training/${model-1.model}/model-best 
+      corpus/${vars.dev}.spacy 
+      --output training/${model-1.model}/metrics.json 
+      --gpu-id ${vars.gpu_id}"
+      - "python -m spacy evaluate training/${model-2.model}/model-best 
+      corpus/${vars.dev}.spacy 
+      --output training/${model-2.model}/metrics.json 
+      --gpu-id ${vars.gpu_id}"
     deps:
       - "corpus/${vars.dev}.spacy"
       - "training/${model-1.model}/model-best"

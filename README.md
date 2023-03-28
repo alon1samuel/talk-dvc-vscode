@@ -2,7 +2,7 @@
 How to use DVC pipelines and vscode notebook extensions to run Data Science experiments in Python
 
 ## Introduction
-This is a repo that was done for a lecture for PyData Bristol on 11.10.2022. 
+This is a repo that was done for a lecture for PyData Bristol on 10.2022 and for Data Bristol on 03.2023. 
 
 This repo has the materials for a simple DVC pipeline and how to monitor results using VSCode notebook extension - check changes.
 
@@ -17,9 +17,9 @@ This repo has the materials for a simple DVC pipeline and how to monitor results
 
 ## Installation (on linux)
 
-`git clone https://github.com/polecat-dev/pydata-talk-dvc-vscode.git`
+`git clone https://github.com/polecat-dev/talk-dvc-vscode.git`
 
-`cd dvc_vscode`
+`cd talk-dvc-vscode`
 
 `poetry shell`
 
@@ -57,7 +57,7 @@ To generate the graph visualization above, run:
 
 ![dag-image](dag.png)
 ## Credits
-Thanks to [PyData Bristol](https://github.com/pydatabristol) for the talk opportunity.
+Thanks to [PyData Bristol](https://github.com/pydatabristol) & [Data Bristol](https://www.meetup.com/databristol/) for the talk opportunity.
 
 Thanks to [Polecat](https://www.polecat.com/) for the time and information sharing.
 

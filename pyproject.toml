@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "pydata-talk-dvc-vscode"
+name = "talk-dvc-vscode"
 version = "0.1.0"
 description = ""
 authors = ["Alon Samuel"]
 readme = "README.md"
-packages = [{include = "pydata_talk_dvc_vscode"}]
+packages = [{include = "talk_dvc_vscode"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
