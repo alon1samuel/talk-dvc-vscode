@@ -47,6 +47,8 @@ uv pip install -r requirements.txt
 
 `python scripts/init_files.py`
 
+`dvc init`
+
 ## To start
 
 ### To reproduce the pipeline - 
