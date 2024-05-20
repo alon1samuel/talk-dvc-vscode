@@ -11,21 +11,39 @@ This repo has the materials for a simple DVC pipeline and how to monitor results
 
 ## Prerequisites
 1. [Python 3.11](https://www.python.org/).
-2. [Poetry](https://python-poetry.org/).
-3. [Graphviz](https://graphviz.org/).
-4. [VSCode](https://code.visualstudio.com/).
+2. [Graphviz](https://graphviz.org/).
+3. [VSCode](https://code.visualstudio.com/).
+
+For virtual env either:
+
+4. [Poetry](https://python-poetry.org/).
+
+Or:
+
+4. [Conda](https://anaconda.org/)
+5. [uv](https://github.com/astral-sh/uv)
 
 ## Installation (on linux)
 
-`git clone https://github.com/polecat-dev/talk-dvc-vscode.git`
+`git clone git@github.com:alon1samuel/talk-dvc-vscode.git`
 
 `cd talk-dvc-vscode`
 
-`poetry shell`
+Poetry:
 
-`pip install --upgrade pip`
+```bash
+poetry shell
+pip install --upgrade pip
+poetry install (installing dependencies)
+```
 
-`poetry install` (installing dependencies)
+Conda+uv:
+
+```bash
+conda create -n dvc_intro python=3.11 -y
+conda activate dvc_intro
+uv pip install -r requirements.txt
+```
 
 `python scripts/init_files.py`
 

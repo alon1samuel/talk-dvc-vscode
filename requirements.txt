@@ -1,0 +1,6 @@
+spacy ~= 3.5.0
+dvc-s3 ~= 3.2.0
+ipykernel ~= 6.21.2
+pandas ~= 1.5.3
+black ~= 23.1.0
+mypy ~= 1.0.0
