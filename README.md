@@ -23,7 +23,7 @@ Or:
 4. [Conda](https://anaconda.org/)
 5. [uv](https://github.com/astral-sh/uv)
 
-## Installation (on linux)
+## Installation
 
 `git clone git@github.com:alon1samuel/talk-dvc-vscode.git`
 
@@ -73,13 +73,15 @@ Go to source control VSCode extension to check results changes.
 You can explore the pipeline in the [dvc.yaml](./dvc.yaml). 
 To generate the graph visualization above, run: 
 
-`poetry run dvc dag --dot | dot -Tpng > dag.png`
+`dvc dag --dot | dot -Tpng > dag.png`
 
 ![dag-image](dag.png)
 ## Credits
 Thanks to [PyData Bristol](https://github.com/pydatabristol) & [Data Bristol](https://www.meetup.com/databristol/) for the talk opportunity.
 
 Thanks to [Polecat](https://www.polecat.com/) for the time and information sharing.
+
+Thanks to [Dyson](https://dyson.com/) for the time and information sharing.
 
 Thanks to [SpaCy](https://github.com/explosion/projects/tree/v3/tutorials/textcat_docs_issues) for the materials.
 

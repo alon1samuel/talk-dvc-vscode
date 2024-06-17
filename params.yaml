@@ -13,7 +13,3 @@ model-1:
 model-2:
   config: "config_2.cfg"
   model: "model_2"
-
-model-3:
-  config: "config_3.cfg"
-  model: "model_3"
